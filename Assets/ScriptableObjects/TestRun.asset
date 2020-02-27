@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a8aae2b09cebc4c91c297b0927fac5, type: 3}
+  m_Name: TestRun
+  m_EditorClassIdentifier: 
+  portraitName: 
+  meshPrefab: {fileID: -927199367670048503, guid: ff2a179e1ea5c584292682364be60813,
+    type: 3}
+  particlePrefab: {fileID: 8579739226123811850, guid: 9a60b61a881304b44a4d2f565d379afc,
+    type: 3}
+  anim: {fileID: 0}
+  animClip: {fileID: 6200578666267062213, guid: ff2a179e1ea5c584292682364be60813,
+    type: 3}
+  shouldLoopAnimation: 0

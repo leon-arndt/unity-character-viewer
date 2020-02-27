@@ -7,7 +7,10 @@ using UnityEngine;
 /// </summary>
 public class SceneManager : MonoBehaviour
 {
+    public Portrait[] portraitPool;
+    public int portraitIndex = 0;
     public Portrait currentPortrait;
+
     public GameObject portraitHolder;
 
     /*
@@ -27,8 +30,14 @@ public class SceneManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            LoadPortrait(currentPortrait);
+            GoToNextPortrait();
         }
+    }
+
+    public void GoToNextPortrait()
+    {
+        portraitIndex = (portraitIndex + 1) % portraitPool.Length;
+        LoadPortrait(portraitPool[portraitIndex]);
     }
 
     public void LoadPortrait(Portrait portrait)
@@ -47,9 +56,10 @@ public class SceneManager : MonoBehaviour
         particles.transform.SetParent(portraitHolder.transform);
 
         //play animation
-        mesh.GetComponent<Animator>().Play(portrait.animClip.name);
+        //mesh.GetComponent<Animator>().Play(portrait.animClip.name);
+        mesh.GetComponent<Animation>().Play(portrait.animClip.name);
 
-        bool matches = mesh.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName(portrait.animClip.name);
-        Debug.Log("Animation matches: " + matches);
+        //bool matches = mesh.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName(portrait.animClip.name);
+        //Debug.Log("Animation matches: " + matches);
     }
 }

@@ -337,7 +337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de59d2ede9696ce48bba58d9b278f44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPortrait: {fileID: 11400000, guid: 3bfa54c70f043194ea214953a42ab746, type: 2}
+  portraitPool:
+  - {fileID: 11400000, guid: 1b913007713ef92439c4b0eac571a0bc, type: 2}
+  - {fileID: 11400000, guid: 3bfa54c70f043194ea214953a42ab746, type: 2}
+  portraitIndex: 0
+  currentPortrait: {fileID: 0}
   portraitHolder: {fileID: 1889138337}
 --- !u!1 &1889138337
 GameObject:
