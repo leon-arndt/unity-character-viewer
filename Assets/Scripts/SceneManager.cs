@@ -54,8 +54,11 @@ public class SceneManager : MonoBehaviour
         GameObject mesh = Instantiate(portrait.meshPrefab);
         mesh.transform.SetParent(portraitHolder.transform);
 
-        GameObject particles = Instantiate(portrait.particlePrefab);
-        particles.transform.SetParent(portraitHolder.transform);
+        if (portrait.particlePrefab != null)
+        {
+            GameObject particles = Instantiate(portrait.particlePrefab);
+            particles.transform.SetParent(portraitHolder.transform);
+        }
 
         //play animation
         //mesh.GetComponent<Animator>().Play(portrait.animClip.name);

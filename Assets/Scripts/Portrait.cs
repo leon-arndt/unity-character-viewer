@@ -9,7 +9,6 @@ public class Portrait : ScriptableObject
 
     public GameObject meshPrefab;
     public GameObject particlePrefab;
-    public Animation anim;
     public AnimationClip animClip;
     public bool shouldLoopAnimation;
 }

@@ -432,6 +432,9 @@ MonoBehaviour:
   portraitPool:
   - {fileID: 11400000, guid: 1b913007713ef92439c4b0eac571a0bc, type: 2}
   - {fileID: 11400000, guid: 3bfa54c70f043194ea214953a42ab746, type: 2}
+  - {fileID: 11400000, guid: 8ca8e77cdbe70f64089bfb3440b4cded, type: 2}
+  - {fileID: 11400000, guid: 5da08e9360821c04992d1e1005150b4b, type: 2}
+  - {fileID: 11400000, guid: 7d9008c979899da40bb8221abb3f4cde, type: 2}
   portraitIndex: 0
   currentPortrait: {fileID: 0}
   portraitHolder: {fileID: 1889138337}
