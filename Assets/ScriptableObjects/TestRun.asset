@@ -20,4 +20,4 @@ MonoBehaviour:
   anim: {fileID: 0}
   animClip: {fileID: 6200578666267062213, guid: ff2a179e1ea5c584292682364be60813,
     type: 3}
-  shouldLoopAnimation: 0
+  shouldLoopAnimation: 1

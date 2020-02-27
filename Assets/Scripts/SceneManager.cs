@@ -42,6 +42,8 @@ public class SceneManager : MonoBehaviour
 
     public void LoadPortrait(Portrait portrait)
     {
+        currentPortrait = portrait;
+
         //Delete current portrait
         foreach (Transform child in portraitHolder.transform)
         {
@@ -58,6 +60,13 @@ public class SceneManager : MonoBehaviour
         //play animation
         //mesh.GetComponent<Animator>().Play(portrait.animClip.name);
         mesh.GetComponent<Animation>().Play(portrait.animClip.name);
+
+        mesh.GetComponent<Animation>().wrapMode = WrapMode.Once;
+
+        if (portrait.shouldLoopAnimation)
+        {
+            mesh.GetComponent<Animation>().wrapMode = WrapMode.Loop;
+        }
 
         //bool matches = mesh.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName(portrait.animClip.name);
         //Debug.Log("Animation matches: " + matches);
